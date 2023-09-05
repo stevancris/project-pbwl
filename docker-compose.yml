@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  laravel:
+    image:
+    networks:
+      - learn
+networks:
+  learn:
+    driver: bridge
