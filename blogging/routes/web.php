@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home', function () {
+    return "<h1>Ini Home!</h1>";
+});
+
+Route::get('/about', function () {
+    echo "<h1 style='text-align: center'><u>Tentang saya</u></h1>";
+    echo "<p>Ini website aku. <i>Never stop learning</i>. <strong>Jangan lupa tidur</strong>.</p>";
+});
